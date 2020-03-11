@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="KataTestStatePattern.cs" />
     <Compile Include="KataTestStrategyPattern.cs" />
+    <Compile Include="KataTestVisitorPattern.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
