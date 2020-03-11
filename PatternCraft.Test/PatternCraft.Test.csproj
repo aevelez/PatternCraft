@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KataTestDecorator.cs" />
     <Compile Include="KataTestStatePattern.cs" />
     <Compile Include="KataTestStrategyPattern.cs" />
     <Compile Include="KataTestVisitorPattern.cs" />
