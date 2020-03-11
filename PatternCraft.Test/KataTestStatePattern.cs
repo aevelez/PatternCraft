@@ -1,11 +1,12 @@
 ﻿
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using PatternCraft.State;
 
 namespace PatternCraft.Test
 {
     [TestClass]
-    public class KataTestf
+    public class KataTestStatePattern
     {
         [TestMethod]
         public void _0_TankState()

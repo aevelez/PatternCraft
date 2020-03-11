@@ -1,4 +1,4 @@
-﻿namespace PatternCraft
+﻿namespace PatternCraft.State
 {
     
 
