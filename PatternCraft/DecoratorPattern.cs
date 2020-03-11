@@ -25,12 +25,19 @@
         public MarineWeaponUpgrade(IMarine marine)
         {
             this.marine = marine;
-            this.Damage = marine.Damage + 1;
         }
 
-        public int Damage { get; set ; }
+        public int Damage
+        {
+            get { return this.marine.Damage + 1; }
+            set { this.marine.Damage = value; }
+        }
 
-        public int Armor { get; set; }
+        public int Armor
+        {
+            get { return this.marine.Armor; }
+            set { this.marine.Armor = value; }
+        }
     }
 
     public class MarineArmorUpgrade : IMarine
@@ -40,11 +47,18 @@
         public MarineArmorUpgrade(IMarine marine)
         {
             this.marine = marine;
-            this.Armor = marine.Armor + 1;
         }
 
-        public int Damage { get; set; }
+        public int Damage
+        {
+            get { return this.marine.Damage; }
+            set { this.marine.Damage = value; }
+        }
 
-        public int Armor { get; set; }
+        public int Armor
+        {
+            get { return this.marine.Armor + 1; }
+            set { this.marine.Armor = value; }
+        }
     }
 }
