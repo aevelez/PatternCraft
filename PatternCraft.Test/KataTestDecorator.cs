@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using PatternCraft.Decorator;
 
 namespace PatternCraft.Test
 {

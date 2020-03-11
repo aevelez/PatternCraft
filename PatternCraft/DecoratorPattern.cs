@@ -1,4 +1,4 @@
-﻿namespace PatternCraft
+﻿namespace PatternCraft.Decorator
 {
     public interface IMarine
     {
@@ -20,31 +20,31 @@
 
     public class MarineWeaponUpgrade : IMarine
     {
-        private IMarine marines;
+        private IMarine marine;
 
         public MarineWeaponUpgrade(IMarine marine)
         {
-            marines = marine;
-            marines.Damage ++;
+            this.marine = marine;
+            this.Damage = marine.Damage + 1;
         }
 
-        public int Damage { get { return marines.Damage; } set { marines.Damage = value; } }
+        public int Damage { get; set ; }
 
-        public int Armor { get { return marines.Armor; } set { marines.Armor = value; } }
+        public int Armor { get; set; }
     }
 
     public class MarineArmorUpgrade : IMarine
     {
-        private IMarine marines;
+        private IMarine marine;
 
         public MarineArmorUpgrade(IMarine marine)
         {
-            marines = marine;
-            marines.Armor++;
+            this.marine = marine;
+            this.Armor = marine.Armor + 1;
         }
 
-        public int Damage { get { return marines.Damage; } set { marines.Damage = value; } }
+        public int Damage { get; set; }
 
-        public int Armor { get { return marines.Armor; } set { marines.Armor = value; } }
+        public int Armor { get; set; }
     }
 }
