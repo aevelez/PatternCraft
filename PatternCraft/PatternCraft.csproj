@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdapterPattern.cs" />
+    <Compile Include="CommandPattern.cs" />
     <Compile Include="DecoratorPattern.cs" />
     <Compile Include="StatePattern.cs" />
     <Compile Include="Program.cs" />
